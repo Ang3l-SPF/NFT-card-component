@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables*/
+:root{
+    /* Neutral*/
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    /*Primary*/
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+body{
+    background-color:var(--main-BG);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: var(--card-BG);
+    width: 320px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.equi-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+}
+
+.card-information{
+    margin: 1rem 0;
+    border-bottom: 2px solid var(--line);
+}
+
+.title{
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--White);
+    font-weight: 600;
+    font-size: 1.3rem;
+    
+}
+
+.description{
+    margin-bottom: 1rem;
+    color: var(--Soft-blue);
+    font-size: 1rem;
+    padding-right: 1.1rem;
+    line-height: 1.5;
+}
+
+.points{
+    display: flex;
+    margin-bottom: .8em;
+}
+
+.ethe-points{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.ethe-points,
+.time{
+    margin-left: .4em;
+    font-size: 1rem;
+}
+
+.clock-icon{
+    margin-left: auto;
+}
+
+.time{
+    color: var(--Soft-blue);
+}
+
+.author-img-profile{
+    width: 15%;
+    border-radius: 50%;
+    border: 1.5px solid var(--White); 
+    vertical-align: middle;
+}
+
+.author-attrib{
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 1rem;
+    color: var(--Soft-blue);
+}
+
+.author-attrib--color{
+    color: var(--White);
+    text-decoration: none;
+}
+
+.equilibrium{
+    position: relative;
+}
+
+.view-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+
+}
+
+.view:first-child{
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    z-index: -1;
+}
+.author-attrib--color:hover,
+.title:hover,
+.view-container:hover
+{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.view-container:hover{
+    --Cyan: hsla(178 100% 50% / 0.5);
+    background-color: var(--Cyan);
+    z-index: 1;
+}
+
+
+
+
+
+
+
